@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mototrade Responsive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+
+    html {
+      scroll-padding-top: 10px; /* Adjust this value to match your navbar height */
+    }
+
+
+    .logo {
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .motor-img {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+
+        .loan-tab {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #003478;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      z-index: 999;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+
+
+
+
+      .card-modern {
+      border: 2px solid #080074;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+      height: 100%;
+    }
+
+    .card-modern:hover {
+      transform: translateY(-5px);
+    }
+
+    .motor-img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .model-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .variant-block {
+      border-top: 1px solid #000000;
+      padding-top: 0.4rem;
+
+    }
+
+    .variant-block h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .variant-block p {
+      margin: 0;
+      font-size: 0.75rem;
+    }
+
+.code {
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  padding: 2px 8px;
+  font-size: 0.65rem;
+  color: #ffffff;
+  background-color: #3e92ff;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+      .navbar-custom {
+    background-color: rgb(0, 0, 112);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    font-size: 0.8rem; /* Adjust font size here */
+  }
+
+    @media (max-width: 414px) {
+    .navbar-custom .nav-link,
+    .navbar-custom .dropdown-item {
+      font-size: 0.6rem; /* Smaller text for mobile if needed */
+    }
+
+
+
+      
+.card-modern {
+  background: #ffffff;
+  border: 1px solid #00166d;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.card-modern:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.motor-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card-modern:hover .motor-img {
+  transform: scale(1.05);
+}
+
+
+.model-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+color: #003478;
+
+}
+
+.variant-block {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.variant-block h3 {
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+   color: #0354bd;
+  
+}
+
+.variant-block p {
+  margin: 0;
+  font-size: 0.6rem;
+}
+
+
+
+.code {
+  font-size: 0.4rem;
+  background-color: #003478;
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+
+
+    }
+
+  </style>
+</head>
+
+<body class="bg-light">
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark  navbar-custom">
+  <div class="container-fluid px-3">
+    <a class="navbar-brand d-flex align-items-center fw-semibold" href="/motortrade/index.html">
+      <img src="https://motortrade.com.ph/wp-content/uploads/2018/07/mcewnew.png" alt="Logo" class="me-2" style="height: 32px;">
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-2">
+        <!-- Dropdowns -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Motorcycles Price</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="/motortrade/motor-prices/yamaha.html">Yamaha</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-prices/honda.html">Honda</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-prices/suzuki.html">Suzuki</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-prices/kawasaki.html">Kawasaki</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Motorcycles Specs</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="/motortrade/motor-specs/yamaha.html">Yamaha</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-specs/honda.html">Honda</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-specs/suzuki.html">Suzuki</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-specs/kawasaki.html">Kawasaki</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Motorcycles Installment</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="/motortrade/motor-installment/yamaha.html">Yamaha</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-installment/honda.html">Honda</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-installment/suzuki.html">Suzuki</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-installment/kawasaki.html">Kawasaki</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Motorcycles Repo</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="/motortrade/motor-repo/yamaha.html">Yamaha</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-repo/honda.html">Honda</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-repo/suzuki.html">Suzuki</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-repo/kawasaki.html">Kawasaki</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Motorcycles Repo Installment</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="/motortrade/repo-installment/yamaha.html">Yamaha</a></li>
+            <li><a class="dropdown-item" href="/motortrade/repo-installment/honda.html">Honda</a></li>
+            <li><a class="dropdown-item" href="/motortrade/repo-installment/suzuki.html">Suzuki</a></li>
+            <li><a class="dropdown-item" href="/motortrade/repo-installment/kawasaki.html">Kawasaki</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Other Services</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Customer Portal</a></li>
+              <li><a class="dropdown-item" href="#">Find a Store</a></li>
+            </ul>
+          </li>
+
+
+        <!-- Single links -->
+        <li class="nav-item"><a class="nav-link" href="/motortrade/calculator.html">Calculator</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  <br>
+  <div class="container py-3">
+    <div class="row g-2">
+      <!-- Loop 9 cards -->
+      <div class="col-6">
+            <div class="card-modern w-100">
+                  <a href=/motortrade/motor-specs/yamaha.html>
+              <img src="https://motonewsworld.com/wp-content/uploads/2024/06/yamaha-nmax-turbo-2025-6.jpg" alt="Yamaha NMAX Turbo" class="motor-img">
+              <div class="card-content">
+                </a>
+              <h2 class="model-title text-center">Yamaha NMAX</h2>
+              <div class="variant-block">
+                <h3>Standard</h3>
+                <p><strong>Srp:</strong> ₱155,900</p>
+                <p><strong>Total:</strong> ₱160,100</p>
+                <p><strong>Colors:</strong>Black, Light Grey, Black Gold, Dark Magma.</p>
+                <span class="code">Model Code: BUA1</span>
+              </div>
+
+              <div class="variant-block">
+                <h3>Techmax</h3>
+                <p><strong>Srp:</strong> ₱175,900</p>
+                <p><strong>Total:</strong> ₱180,100</p>
+                <p><strong>Colors:</strong> Black, Light Grey, Black Gold, Dark Magma.</p>
+                <span class="code">Model Code: BTU1</span>
+              </div>
+            </div>
+          </div>  
+      </div>
+
+      <div class="col-6">
+            <div class="card-modern w-100">
+              <a href=/motortrade/motor-specs/yamaha.html>
+              <img src="https://imgcdn.zigwheels.ph/medium/gallery/color/86/1891/yamaha-xmax-color-992533.jpg" alt="Yamaha XMAX 300" class="motor-img">
+              </a>
+              <div class="card-content">
+                <h2 class="model-title text-center">Yamaha XMAX</h2>
+
+                <div class="variant-block">
+                  <h3>Standard 300cc</h3>
+                  <p><strong>Srp:</strong> ₱311,000</p>
+                  <p><strong>Total:</strong> ₱315,200</p>
+                  <p><strong>Colors:</strong> Dark Gray Metallic and Bluish Gray Cocktail</p>
+                  <span class="code">Model Code: BSS6</span>
+                </div>
+              </div>
+            </div>
+      </div>
+
+      <div class="col-6">
+          <div class="card-modern w-100">
+            <a href=/motortrade/motor-specs/yamaha.html>
+            <img src="https://imgcdn.zigwheels.ph/large/gallery/color/86/2810/yamaha-sniper-155-color-625359.jpg" alt="Yamaha Sniper 155" class="motor-img">
+            </a>
+            <div class="card-content">
+              <h2 class="model-title text-center">Yamaha Sniper 155</h2>
+              <div class="variant-block">
+                <h3>Standard</h3>
+                <p><strong>Srp:</strong> ₱125,900</p>
+                <p><strong>Total:</strong> ₱130,100</p>
+                <p><strong>Colors:</strong> Race Blue, Cyan Metallic, and Matte Black</p>
+                <span class="code">Model Code: BAY6</span>
+              </div>
+
+              <div class="variant-block">
+                <h3>R Version</h3>
+                <p><strong>Srp:</strong> ₱145,900</p>
+                <p><strong>Total (LTO + Helmet):</strong> ₱150,100</p>
+                <p><strong>Colors:</strong> Race Blue, Cyan Metallic, and Matte Black</p>
+                <span class="code">Model Code: BSP1</span>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-6">
+            <div class="card-modern w-100">
+              <a href=/motortrade/motor-specs/yamaha.html>
+              <img src="https://imgcdn.zigwheels.ph/large/gallery/color/86/1832/yamaha-mio-aerox-color-964099.jpg" alt="Yamaha Aerox 155" class="motor-img">
+              </a>
+              <div class="card-content">
+                <h2 class="model-title text-center">Yamaha Aerox 155</h2>
+
+                <div class="variant-block">
+                  <h3>Standard</h3>
+                  <p><strong>Srp:</strong> ₱123,000</p>
+                  <p><strong>Total:</strong> ₱127,200</p>
+                  <p><strong>Colors:</strong> Matte Black, Cyan Metallic, Racing Blue</p>
+                  <span class="code">Model Code: BRW6</span>
+                </div>
+
+                <div class="variant-block">
+                  <h3>Abs Version</h3>
+                  <p><strong>Srp:</strong> ₱146,000</p>
+                  <p><strong>Total:</strong> ₱150,200</p>
+                  <p><strong>Colors:</strong> Matte Black, Prestige Silver, Racing Blue</p>
+                  <span class="code">Model Code: BRW5</span>
+                </div>
+              </div>
+        </div>
+      </div>
+
+      <div class="col-6">
+          <div class="card-modern w-100">
+            <a href=/motortrade/motor-specs/yamaha.html>
+            <img src="https://imgcdn.zigwheels.ph/large/gallery/color/86/1096/yamaha-mio-i-125-color-830061.jpg" alt="Yamaha Mio i 125" class="motor-img">
+            </a>
+            <div class="card-content">
+              <h2 class="model-title text-center">Yamaha Mio i 125</h2>
+
+              <div class="variant-block">
+                <h3>Standard</h3>
+                <p><strong>Srp:</strong> ₱77,900</p>
+                <p><strong>Total:</strong> ₱82,100</p>
+                <p><strong>Colors:</strong> Matte Blue, Matte Black, Yellow, Magenta, Cyan Metallic</p>
+                <span class="code">Model Code: BB39</span>
+              </div>
+
+              <div class="variant-block">
+                <h3>S version</h3>
+                <p><strong>Srp:</strong> ₱82,900</p>
+                <p><strong>Total:</strong> ₱87,100</p>
+                <p><strong>Colors:</strong> Matte Blue, Matte Black, Yellow, Magenta, Cyan Metallic</p>
+                <span class="code">Model Code: B6B7</span>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-6">
+          <div class="card-modern w-100">
+            <a href=/motortrade/motor-specs/yamaha.html>
+            <img src="https://imgcdn.zigwheels.ph/medium/gallery/color/86/2887/yamaha-mio-gear-color-732047.jpg" alt="Yamaha Mio Gear" class="motor-img">
+            </a>
+            <div class="card-content">
+              <h2 class="model-title text-center">Yamaha Mio Gear</h2>
+
+              <div class="variant-block">
+                <h3>Standard</h3>
+                <p><strong>Srp:</strong> ₱79,400</p>
+                <p><strong>Total:</strong> ₱83,600</p>
+                <p><strong>Colors:</strong> Matte Black, Matte Brown, Worn Grey, Matte Grey.</p>
+                <span class="code">Model Code: BJN4</span>
+              </div>
+
+              <div class="variant-block">
+                <h3>S Version</h3>
+                <p><strong>Srp:</strong> ₱84,400</p>
+                <p><strong>Total:</strong> ₱88,600</p>
+                <p><strong>Colors:</strong> Matte Black, Matte Brown, Worn Grey, Matte Grey.</p>
+                <span class="code">Model Code: BJN5</span>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-6">
+          <div class="card-modern w-100">
+            <a href=/motortrade/motor-specs/yamaha.html>
+            <img src="https://imgcdn.zigwheels.ph/large/gallery/color/86/2170/yamaha-mio-gravis-color-968886.jpg" alt="Yamaha Mio Gravis" class="motor-img">
+            </a>
+            <div class="card-content">
+              <h2 class="model-title text-center">Yamaha Mio Gravis</h2>
+              <div class="variant-block">
+                <h3>Standard</h3>
+                <p><strong>Srp:</strong> ₱84,900</p>
+                <p><strong>Total:</strong> ₱89,100</p>
+                <p><strong>Colors:</strong> Dark Gray and Matte Brown </p>
+                <span class="code">Model Code: BKV3</span>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-6">
+            <div class="card-modern w-100">
+              <a href=/motortrade/motor-specs/yamaha.html>
+              <img src="https://imgcdn.zigwheels.ph/medium/gallery/color/86/3009/yamaha-mio-fazzio-color-581628.jpg" alt="Yamaha Mio Fazzio" class="motor-img">
+              </a>
+              <div class="card-content">
+                <h2 class="model-title text-center">Yamaha Mio Fazzio</h2>
+                <div class="variant-block">
+
+                  <h3></h3>
+                  <p><strong>Srp:</strong> ₱93,900</p>
+                  <p><strong>Total:</strong> ₱98,100</p>
+                  <p><strong>Colors:</strong> Orange only</p>
+                  <span class="code">Model Code: BRV2</span>
+                </div>
+
+                <div class="variant-block">
+                  <h3></h3>
+                  <p><strong>Srp:</strong> ₱93,900</p>
+                  <p><strong>Total:</strong> ₱98,100</p>
+                  <p><strong>Colors:</strong> Pastel Green, Ivory White, and Black</p>
+                  <span class="code">Model Code: BRV4</span>
+                </div>
+              </div>
+        </div>
+      </div>
+
+      <div class="col-6">
+            <div class="card-modern w-100">
+              <a href=/motortrade/motor-specs/yamaha.html>
+              <img src="https://imgcdn.zigwheels.my/large/gallery/color/73/2477/yamaha-pg-1-color-466892.jpg" alt="Yamaha PG-1" class="motor-img">
+              </a>
+              <div class="card-content">
+                <h2 class="model-title text-center">Yamaha PG-1</h2>
+                <div class="variant-block">
+                  <h3>Standard</h3>
+                  <p><strong>Srp:</strong> ₱96,400</p>
+                  <p><strong>Total:</strong> ₱100,600</p>
+                  <p><strong>Colors:</strong> Black, Orange, Blue, Gold, Green, and Sand</p>
+                  <span class="code">Model Code: BNR1</span>
+                </div>
+              </div>
+            </div>
+      </div>
+
+
+      <div class="col-6">
+        <div class="card-modern w-100">
+          <a href=/motortrade/motor-specs/yamaha.html>
+          <img src="https://d1hv7ee95zft1i.cloudfront.net/custom/motorcycle-model-photo/original/yamaha-ytx125-62e76bb3ee19f.jpeg" alt="Yamaha YTX 125" class="motor-img">
+          </a>
+          <div class="card-content">
+            <h2 class="model-title text-center mt-3">Yamaha YTX 125</h2>
+            <div class="variant-block">
+              <h3>Utility Standard</h3>
+              <p><strong>Srp:</strong> ₱57,900</p>
+              <p><strong>Total:</strong> ₱62,100</p>
+              <p><strong>Colors:</strong> Black, and Blue.</p>
+              <span class="code">Model Code: BR21</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+<footer class="footer-section text-white py-4" style="font-size: 0.5rem; background-color: rgb(19, 19, 145);">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-4 mb-3">
+        <img src="https://motortrade.com.ph/wp-content/uploads/2018/07/mcewnew.png" alt="Logo" class="mb-3" style="max-height: 20px;">
+        <p class="mb-1"><i class="bi bi-geo-alt-fill me-1"></i>Brgy. IV, Bantay, IS</p>
+        <p><i class="bi bi-geo-alt-fill me-1"></i>Brgy. V, Bantay, IS</p>
+
+      </div>
+      <div class="col-4 mb-3">
+        <h6 class="text-white" style="font-size: 0.7rem;">CONTACT INFO</h6>
+        <a href="#" class="social-icon text-white me-2" style="font-size: 0.7rem;"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="social-icon text-white me-2" style="font-size: 0.7rem;"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="social-icon text-white"><i class="bi bi-youtube" style="font-size: 0.7rem;"></i></a>
+        <p>Phone: <span class="highlight">0926 328 2525</span></p>
+      </div>
+      <div class="col-4 mb-3">
+        <h6 class="text-white" style="font-size: 0.7rem;">PARTNERS</h6>
+        <ul class="list-unstyled" style="font-size: 0.5rem;">
+          <li>Bank of Makati</li>
+          <li>Fundline Finance Corporation</li>
+          <li>Northpoint Development Bank</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-3 footer-links">
+      <a href="#" class="text-white me-2">About Us</a> |
+      <a href="#" class="text-white mx-2">FAQs</a> |
+      <a href="#" class="text-white mx-2">Careers</a> |
+      <a href="#" class="text-white ms-2">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!-- Apply for a Loan Tab -->
+  <div class="loan-tab">Inquire now</div>
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

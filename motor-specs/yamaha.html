@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mototrade Responsive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+
+    html {
+      scroll-padding-top: 10px; /* Adjust this value to match your navbar height */
+    }
+
+
+    .logo {
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .motor-img {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+
+        .loan-tab {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #003478;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      z-index: 999;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+
+
+
+
+      .card-modern {
+      background-color: #fff;
+      border: 1px solid #000000;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+      height: 100%;
+    }
+
+    .card-modern:hover {
+      transform: translateY(-5px);
+    }
+
+    .motor-img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .model-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .variant-block {
+      border-top: 1px solid #ccc;
+      padding-top: 1rem;
+
+    }
+
+    .variant-block h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .variant-block p {
+      margin: 0;
+      font-size: 0.85rem;
+    }
+
+    .code {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      color: #555;
+    }
+
+
+      .navbar-custom {
+    background-color: rgb(0, 0, 112);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    font-size: 0.8rem; /* Adjust font size here */
+  }
+
+    @media (max-width: 414px) {
+    .navbar-custom .nav-link,
+    .navbar-custom .dropdown-item {
+      font-size: 0.6rem; /* Smaller text for mobile if needed */
+    }
+
+
+
+      
+.card-modern {
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.card-modern:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.motor-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card-modern:hover .motor-img {
+  transform: scale(1.05);
+}
+
+
+.model-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+color: #003478;
+
+}
+
+.variant-block {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.variant-block h3 {
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+   color: #0354bd;
+  
+}
+
+.variant-block p {
+  margin: 0;
+  font-size: 0.6rem;
+}
+
+
+
+.code {
+  font-size: 0.4rem;
+  background-color: #003478;
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+
+
+    }
+
+  </style>
+</head>
+
+<body class="bg-light">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark  navbar-custom">
+  <div class="container-fluid px-3">
+    <a class="navbar-brand d-flex align-items-center fw-semibold" href="/motortrade/index.html">
+      <img src="https://motortrade.com.ph/wp-content/uploads/2018/07/mcewnew.png" alt="Logo" class="me-2" style="height: 32px;">
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-2">
+        <!-- Dropdowns -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Motorcycles Price</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="/motortrade/motor-prices/yamaha.html">Yamaha</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-prices/honda.html">Honda</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-prices/suzuki.html">Suzuki</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-prices/kawasaki.html">Kawasaki</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Motorcycles Specs</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="/motortrade/motor-specs/yamaha.html">Yamaha</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-specs/honda.html">Honda</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-specs/suzuki.html">Suzuki</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-specs/kawasaki.html">Kawasaki</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Motorcycles Installment</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="/motortrade/motor-installment/yamaha.html">Yamaha</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-installment/honda.html">Honda</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-installment/suzuki.html">Suzuki</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-installment/kawasaki.html">Kawasaki</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Motorcycles Repo</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="/motortrade/motor-repo/yamaha.html">Yamaha</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-repo/honda.html">Honda</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-repo/suzuki.html">Suzuki</a></li>
+            <li><a class="dropdown-item" href="/motortrade/motor-repo/kawasaki.html">Kawasaki</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Motorcycles Repo Installment</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="/motortrade/repo-installment/yamaha.html">Yamaha</a></li>
+            <li><a class="dropdown-item" href="/motortrade/repo-installment/honda.html">Honda</a></li>
+            <li><a class="dropdown-item" href="/motortrade/repo-installment/suzuki.html">Suzuki</a></li>
+            <li><a class="dropdown-item" href="/motortrade/repo-installment/kawasaki.html">Kawasaki</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Other Services</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Customer Portal</a></li>
+              <li><a class="dropdown-item" href="#">Find a Store</a></li>
+            </ul>
+          </li>
+
+
+        <!-- Single links -->
+        <li class="nav-item"><a class="nav-link" href="/motortrade/calculator.html">Calculator</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  <br>
+  <div class="container py-3">
+    <div class="row g-2">
+      <!-- Loop 9 cards -->
+      <div class="col-12">
+  <div class="card-modern w-100">
+        <img  src="https://motonewsworld.com/wp-content/uploads/2024/06/yamaha-nmax-turbo-2025-6.jpg" alt="Yamaha NMAX" class="motor-img">
+          <div class="card-content">
+            <h2 class="model-title text-center">Yamaha NMAX 155</h2>
+
+            <div class="variant-block">
+              <h3>Model Variants</h3>
+              <p><strong>Standard:</strong> NMAX 155 Standard</p>
+              <p><strong>Techmax:</strong> NMAX 155 Techmax Turbo</p>
+            </div>
+
+            <div class="variant-block">
+              <h3>Engine & Performance</h3>
+              <p><strong>Displacement:</strong> 155cc (Liquid-Cooled, 4-Stroke, SOHC)</p>
+              <p><strong>Engine Type:</strong> Blue Core w/ VVA (Variable Valve Actuation)</p>
+              <p><strong>Turbo:</strong> ❌ Standard &nbsp; | &nbsp; ✅ Techmax Turbo</p>
+              <p><strong>Transmission:</strong> V-Belt Automatic (CVT)</p>
+              <p><strong>Starting System:</strong> Electric Starter</p>
+              <p><strong>Smart Motor Generator:</strong> ✅ both</p>
+              <p><strong>Stop & Start System:</strong> ❌ Standard &nbsp; | &nbsp; ✅ Techmax</p>
+              <p><strong>Fuel System:</strong> Fuel Injection</p>
+              <p><strong>Horsepower:</strong> ~15.4 HP @ 8,000 rpm</p>
+              <p><strong>Torque:</strong> ~13.9 Nm @ 6,500 rpm</p>
+            </div>
+
+            <div class="variant-block">
+              <h3>Dimensions</h3>
+              <p><strong>L x W x H:</strong> 1935 x 740 x 1160 mm</p>
+              <p><strong>Wheelbase:</strong> 1340 mm</p>
+              <p><strong>Seat Height:</strong> 765 mm</p>
+              <p><strong>Ground Clearance:</strong> 125 mm</p>
+              <p><strong>Fuel Tank Capacity:</strong> 7.1 L</p>
+              <p><strong>Weight:</strong> 131 kg (Standard) &nbsp; | &nbsp; ~132 kg (Techmax)</p>
+            </div>
+
+            <div class="variant-block">
+              <h3>Brakes, Wheels & Suspension</h3>
+              <p><strong>ABS:</strong> ✅ Front (both)</p>
+              <p><strong>Brake Type:</strong> Disc (Front and Rear)</p>
+              <p><strong>Traction Control:</strong> ❌ Standard &nbsp; | &nbsp; ✅ Techmax</p>
+              <p><strong>Front Suspension:</strong> Telescopic Fork</p>
+              <p><strong>Rear Suspension:</strong> Unit Swing</p>
+              <p><strong>Wheel Size:</strong> 13 inches (both)</p>
+              <p><strong>Tires:</strong> Tubeless (both)</p>
+            </div>
+
+            <div class="variant-block">
+              <h3>Technology & Features</h3>
+              <p><strong>Smart Key System:</strong> ✅ both</p>
+              <p><strong>Instrument Panel:</strong> LCD (Standard) &nbsp; | &nbsp; TFT Full Color (Techmax)</p>
+              <p><strong>Y-Connect App:</strong> ❌ Standard &nbsp; | &nbsp; ✅ Techmax</p>
+              <p><strong>Bluetooth Connectivity:</strong> ❌ Standard &nbsp; | &nbsp; ✅ Techmax</p>
+              <p><strong>Power Outlet:</strong> ✅ both</p>
+              <p><strong>Hazard Lights:</strong> ✅ both</p>
+            </div>
+
+            <div class="variant-block">
+              <h3>Comfort & Styling</h3>
+              <p><strong>Seat Material:</strong> Regular Foam (Standard) &nbsp; | &nbsp; Premium-Stitch (Techmax)</p>
+              <p><strong>Windscreen:</strong> Fixed (Standard) &nbsp; | &nbsp; Adjustable (Techmax)</p>
+              <p><strong>Footrest:</strong> Standard &nbsp; | &nbsp; Extended Touring Footrest (Techmax)</p>
+              <p><strong>Handlebars:</strong> Standard Bar &nbsp; | &nbsp; Premium Coated (Techmax)</p>
+              <p><strong>Color Options:</strong> More Exclusive Colors for Techmax</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-12">
+          <div  class="card-modern w-100">
+            <img src="https://imgcdn.zigwheels.ph/medium/gallery/color/86/1891/yamaha-xmax-color-992533.jpg" alt="Yamaha XMAX 300" class="motor-img">
+                <div class="card-content">
+                  <h2 class="model-title text-center">Yamaha XMAX 300 V3 (2024)</h2>
+
+                  <div class="variant-block">
+                    <h3>Model Variant</h3>
+                    <p><strong>Standard:</strong> XMAX 300 Version 3</p>
+                  </div>
+
+                  <div class="variant-block">
+                    <h3>Engine & Performance</h3>
+                    <p><strong>Displacement:</strong> 292.4cc</p>
+                    <p><strong>Engine Type:</strong> Liquid-cooled, 4-stroke, SOHC, Single Cylinder, 4-valve</p>
+                    <p><strong>Max Power:</strong> 20.6 kW (27.6 HP) @ 7,250 RPM</p>
+                    <p><strong>Max Torque:</strong> 29 Nm @ 5,750 RPM</p>
+                    <p><strong>Fuel System:</strong> Fuel Injection (FI)</p>
+                    <p><strong>Transmission:</strong> V-Belt Automatic (CVT)</p>
+                    <p><strong>Starter:</strong> Electric</p>
+                    <p><strong>Ignition System:</strong> TCI (Transistor Controlled Ignition)</p>
+                  </div>
+
+                  <div class="variant-block">
+                    <h3>Features</h3>
+                    <p><strong>ABS:</strong> ✅ Dual-Channel ABS</p>
+                    <p><strong>Traction Control:</strong> ✅ Yes</p>
+                    <p><strong>Smart Key:</strong> ✅ Yes</p>
+                    <p><strong>Dashboard:</strong> ✅ 4.2" TFT + 3.2" LCD Dual Display</p>
+                    <p><strong>Connectivity:</strong> ✅ Y-Connect App via Bluetooth</p>
+                    <p><strong>Navigation:</strong> ✅ Built-in turn-by-turn</p>
+                    <p><strong>Charging Port:</strong> ✅ USB Type-C in front compartment</p>
+                  </div>
+
+                  <div class="variant-block">
+                    <h3>Comfort & Styling</h3>
+                    <p><strong>Windscreen:</strong> ✅ Manually Adjustable (2 positions)</p>
+                    <p><strong>Handlebars:</strong> ✅ Adjustable (2 positions)</p>
+                    <p><strong>Seat Height:</strong> 795 mm</p>
+                    <p><strong>Fuel Tank Capacity:</strong> 13.2 L</p>
+                    <p><strong>Storage:</strong> ✅ Underseat fits 2 full-face helmets</p>
+                    <p><strong>Lighting:</strong> ✅ Full LED Headlights & Taillight</p>
+                    <p><strong>Colors:</strong> Dark Petrol, Icon Blue</p>
+                  </div>
+
+                  <div class="variant-block">
+                    <h3>Brakes & Tires</h3>
+                    <p><strong>Front Brake:</strong> 267mm Hydraulic Disc</p>
+                    <p><strong>Rear Brake:</strong> 245mm Hydraulic Disc</p>
+                    <p><strong>Front Tire:</strong> 120/70-15</p>
+                    <p><strong>Rear Tire:</strong> 140/70-14</p>
+                  </div>
+
+                  <div class="variant-block">
+                    <h3>Dimensions</h3>
+                    <p><strong>Overall L x W x H:</strong> 2180 mm × 795 mm × 1410 mm</p>
+                    <p><strong>Wheelbase:</strong> 1540 mm</p>
+                    <p><strong>Ground Clearance:</strong> 135 mm</p>
+                    <p><strong>Wet Weight:</strong> 183 kg</p>
+                  </div>
+                </div>
+
+          </div>
+      </div>
+
+      <div class="col-12">
+          <div id="sniper" class="card-modern w-100">
+            <img  src="https://imgcdn.zigwheels.ph/large/gallery/color/86/2810/yamaha-sniper-155-color-625359.jpg" alt="Yamaha Sniper 155" class="motor-img">
+                <div class="card-content">
+                  <h2 class="model-title text-center">Yamaha Sniper 155</h2>
+
+                  <div class="variant-block">
+                    <h3>Model Variants</h3>
+                    <p><strong>Standard:</strong> Sniper 155</p>
+                    <p><strong>R Version:</strong> Sniper 155 R</p>
+                  </div>
+
+                  <div class="variant-block">
+                    <h3>Engine & Performance</h3>
+                    <p><strong>Engine Type:</strong> Liquid-cooled, 4-stroke, SOHC, 4-valve</p>
+                    <p><strong>Displacement:</strong> 155 cc</p>
+                    <p><strong>Fuel System:</strong> Fuel Injection</p>
+                    <p><strong>Transmission:</strong> 6-speed manual</p>
+                    <p><strong>Assist & Slipper Clutch:</strong> ✅ Both Versions</p>
+                    <p><strong>Max Power:</strong> 17.9 HP @ 9,500 rpm</p>
+                    <p><strong>Max Torque:</strong> 14.4 Nm @ 8,000 rpm</p>
+                    <p><strong>Starter:</strong> Electric Starter</p>
+                  </div>
+
+                  <div class="variant-block">
+                    <h3>Chassis & Suspension</h3>
+                    <p><strong>Frame Type:</strong> Backbone</p>
+                    <p><strong>Front Suspension:</strong> Telescopic Fork</p>
+                    <p><strong>Rear Suspension:</strong> Swingarm (Monoshock)</p>
+                  </div>
+
+                  <div class="variant-block">
+                    <h3>Brakes & Tires</h3>
+                    <p><strong>Front Brake:</strong> Disc Brake</p>
+                    <p><strong>Rear Brake:</strong> Disc Brake</p>
+                    <p><strong>ABS:</strong> ❌ Standard &nbsp; | &nbsp; ✅ R Version (Front only)</p>
+                    <p><strong>Front Tire:</strong> 90/80-17</p>
+                    <p><strong>Rear Tire:</strong> 120/70-17</p>
+                  </div>
+
+                  <div class="variant-block">
+                    <h3>Dimensions</h3>
+                    <p><strong>L x W x H:</strong> 1,975 x 665 x 1,085 mm</p>
+                    <p><strong>Wheelbase:</strong> 1,290 mm</p>
+                    <p><strong>Seat Height:</strong> 795 mm</p>
+                    <p><strong>Ground Clearance:</strong> 150 mm</p>
+                    <p><strong>Fuel Tank Capacity:</strong> 5.4 Liters</p>
+                    <p><strong>Wet Weight:</strong> 121 kg</p>
+                  </div>
+
+                  <div class="variant-block">
+                    <h3>Features</h3>
+                    <p><strong>Front ABS:</strong> ❌ Standard &nbsp; | &nbsp; ✅ R Version</p>
+                    <p><strong>Smart Key:</strong> ❌ Standard &nbsp; | &nbsp; ✅ R Version</p>
+                    <p><strong>Power Socket:</strong> ❌ Standard &nbsp; | &nbsp; ✅ R Version</p>
+                    <p><strong>LCD Instrument Panel:</strong> ✅ Both</p>
+                    <p><strong>LED Headlight/Tail Light:</strong> ✅ Both</p>
+                    <p><strong>VVA (Variable Valve Actuation):</strong> ✅ Both</p>
+                  </div>
+
+
+                </div>
+
+          </div>
+      </div>
+
+      <div class="col-12">
+            <div class="card-modern w-100">
+              <img src="https://imgcdn.zigwheels.ph/large/gallery/color/86/1832/yamaha-mio-aerox-color-964099.jpg" alt="Yamaha Aerox 155" class="motor-img">
+              <div class="card-content">
+                <h2 class="model-title text-center">Yamaha Aerox 155</h2>
+
+                
+              <div class="variant-block">
+                <h3>Model Variants</h3>
+                <p><strong>Standard:</strong> Aerox 155</p>
+                <p><strong>S version:</strong> Aerox 155 S</p>
+              </div>
+
+                  <div class="variant-block">
+                    <h3>Engine & Performance</h3>
+                    <p><strong>Displacement:</strong> 155cc</p>
+                    <p><strong>Engine Type:</strong> Liquid-cooled, SOHC, 4-valve, single cylinder</p>
+                    <p><strong>Max Power:</strong> ~15.4 HP @ 8,000 RPM</p>
+                    <p><strong>Max Torque:</strong> ~13.9 Nm @ 6,500 RPM</p>
+                    <p><strong>Transmission:</strong> CVT (Automatic)</p>
+                    <p><strong>VVA:</strong> ✅ Both Versions</p>
+                  </div>
+
+                  <div class="variant-block">
+                    <h3>Features</h3>
+                    <p><strong>ABS:</strong> ❌ Standard &nbsp; | &nbsp; ✅ ABS Version</p>
+                    <p><strong>Smart Key:</strong> ❌ Standard &nbsp; | &nbsp; ✅ ABS Version</p>
+                    <p><strong>Power Socket:</strong> ✅ Both</p>
+                    <p><strong>Digital Display:</strong> ✅ Both</p>
+                    <p><strong>LED Lights:</strong> ✅ Both</p>
+                    <p><strong>Stop & Start System:</strong> ✅ Both</p>
+                  </div>
+
+                  <div class="variant-block">
+                    <h3>Dimensions</h3>
+                    <p><strong>Seat Height:</strong> 790 mm</p>
+                    <p><strong>Fuel Tank:</strong> 5.5 Liters</p>
+                    <p><strong>Weight:</strong> 124 kg (Standard) / 125 kg (ABS)</p>
+                  </div>
+
+              </div>
+            </div>
+      </div>
+
+      <div class="col-12">
+        <div id="mioi" class="card-modern w-100">
+          <img src="https://imgcdn.zigwheels.ph/large/gallery/color/86/1096/yamaha-mio-i-125-color-830061.jpg" alt="Yamaha Mio i 125" class="motor-img">
+          <div class="card-content">
+            <h2 class="model-title text-center">Yamaha Mio i 125 Series</h2>
+
+            <div class="variant-block">
+              <h3>Model Variants</h3>
+              <p><strong>Standard:</strong> Mio i 125</p>
+              <p><strong>S Version:</strong> Mio i 125 S</p>
+            </div>
+
+            <div class="variant-block">
+              <h3>Engine & Performance</h3>
+              <p><strong>Displacement:</strong> 125cc</p>
+              <p><strong>Engine Type:</strong> Air-cooled, 4-stroke, SOHC, 2-valve</p>
+              <p><strong>Max Power:</strong> 9.3 HP @ 8,000 RPM</p>
+              <p><strong>Max Torque:</strong> 9.6 Nm @ 5,500 RPM</p>
+              <p><strong>Fuel System:</strong> Fuel Injection</p>
+              <p><strong>Transmission:</strong> CVT (Automatic)</p>
+              <p><strong>BlueCore Engine:</strong> ✅ Yes (Both Versions)</p>
+            </div>
+
+            <div class="variant-block">
+              <h3>Chassis & Suspension</h3>
+              <p><strong>Front Suspension:</strong> Telescopic Fork</p>
+              <p><strong>Rear Suspension:</strong> Unit Swing</p>
+              <p><strong>Front Brake:</strong> Disc</p>
+              <p><strong>Rear Brake:</strong> Drum</p>
+              <p><strong>Wheel Type:</strong> Cast</p>
+              <p><strong>Wheel Size:</strong> 14 inches</p>
+            </div>
+
+            <div class="variant-block">
+              <h3>Features</h3>
+              <p><strong>Start/Stop System:</strong> ❌ Standard &nbsp; | &nbsp; ✅ S Version</p>
+              <p><strong>Answer Back Key:</strong> ❌ Standard &nbsp; | &nbsp; ✅ S Version</p>
+              <p><strong>LED Headlight:</strong> ✅ Yes (Both Versions)</p>
+              <p><strong>Instrument Panel:</strong> Analog</p>
+              <p><strong>Side Stand Engine Cut-off:</strong> ✅ Yes (Both Versions)</p>
+            </div>
+
+            <div class="variant-block">
+              <h3>Dimensions</h3>
+              <p><strong>Seat Height:</strong> 750 mm</p>
+              <p><strong>Fuel Tank Capacity:</strong> 4.2 Liters</p>
+              <p><strong>Ground Clearance:</strong> 135 mm</p>
+              <p><strong>Wheelbase:</strong> 1,240 mm</p>
+              <p><strong>Weight:</strong> 94 kg (Standard) &nbsp; | &nbsp; 95 kg (S Version)</p>
+            </div>
+
+            <div class="variant-block">
+              <h3>Other Details</h3>
+              <p><strong>Battery Type:</strong> 12V, YTZ6V</p>
+              <p><strong>Starter System:</strong> Electric & Kick</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-12">
+        <div id="gear" class="card-modern w-100">
+          <img  src="https://imgcdn.zigwheels.ph/medium/gallery/color/86/2887/yamaha-mio-gear-color-732047.jpg" alt="Yamaha Mio Gear" class="motor-img">
+            <div class="card-content">
+              <h2 class="model-title text-center">Yamaha Mio Gear</h2>
+
+              <div class="variant-block">
+                <h3>Model Variants</h3>
+                <p><strong>Standard:</strong> Mio Gear</p>
+                <p><strong>S Version:</strong> Mio Gear S</p>
+              </div>
+
+              <div class="variant-block">
+                <h3>Engine & Performance</h3>
+                <p><strong>Displacement:</strong> 125cc</p>
+                <p><strong>Engine Type:</strong> Air-cooled, SOHC, 2-valve, Single Cylinder</p>
+                <p><strong>Max Power:</strong> ~9.3 HP @ 8,000 RPM</p>
+                <p><strong>Max Torque:</strong> ~9.6 Nm @ 5,500 RPM</p>
+                <p><strong>Transmission:</strong> CVT (Automatic)</p>
+                <p><strong>Fuel System:</strong> Fuel Injection</p>
+                <p><strong>Blue Core Engine:</strong> ✅ Both</p>
+              </div>
+
+              <div class="variant-block">
+                <h3>Features</h3>
+                <p><strong>Start/Stop System:</strong> ❌ Standard &nbsp; | &nbsp; ✅ S Version</p>
+                <p><strong>Answer Back Key:</strong> ❌ Standard &nbsp; | &nbsp; ✅ S Version</p>
+                <p><strong>Engine Kill Switch:</strong> ❌ Standard &nbsp; | &nbsp; ✅ S Version</p>
+                <p><strong>LED Headlight:</strong> ✅ Both Versions</p>
+                <p><strong>USB Charging Port:</strong> ✅ Both Versions</p>
+                <p><strong>Instrument Panel:</strong> Analog Display</p>
+              </div>
+
+              <div class="variant-block">
+                <h3>Chassis & Suspension</h3>
+                <p><strong>Front Suspension:</strong> Telescopic Fork</p>
+                <p><strong>Rear Suspension:</strong> Unit Swing</p>
+                <p><strong>Brakes (F/R):</strong> Disc / Drum</p>
+                <p><strong>Tire (Front):</strong> 80/80-14</p>
+                <p><strong>Tire (Rear):</strong> 100/70-14</p>
+              </div>
+
+              <div class="variant-block">
+                <h3>Dimensions</h3>
+                <p><strong>Seat Height:</strong> 750 mm</p>
+                <p><strong>Ground Clearance:</strong> 135 mm</p>
+                <p><strong>Wheelbase:</strong> 1,260 mm</p>
+                <p><strong>Fuel Tank Capacity:</strong> 4.2 Liters</p>
+                <p><strong>Weight:</strong> 95 kg (Standard) &nbsp; | &nbsp; 96 kg (S Version)</p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div id="gravis" class="card-modern w-100">
+          <img  src="https://imgcdn.zigwheels.ph/large/gallery/color/86/2170/yamaha-mio-gravis-color-968886.jpg" alt="Yamaha Mio Gravis" class="motor-img">
+          <div  class="card-content">
+            <h2 class="model-title text-center">Yamaha Mio Gravis</h2>
+
+            <div class="variant-block">
+              <h3>Engine & Performance</h3>
+              <p><strong>Engine Type:</strong> Air-cooled, 4-Stroke, SOHC, 2-Valve</p>
+              <p><strong>Displacement:</strong> 125cc</p>
+              <p><strong>Max Power:</strong> 9.3 HP @ 8,000 RPM</p>
+              <p><strong>Max Torque:</strong> 9.5 Nm @ 5,500 RPM</p>
+              <p><strong>Transmission:</strong> CVT (V-Belt)</p>
+              <p><strong>Fuel System:</strong> Fuel Injection (FI)</p>
+              <p><strong>Blue Core:</strong> ✅ Yes</p>
+            </div>
+
+            <div class="variant-block">
+              <h3>Technology & Features</h3>
+              <p><strong>Stop & Start System:</strong> ✅ Yes</p>
+              <p><strong>LED Lighting:</strong> ✅ Yes (Headlamp & Taillight)</p>
+              <p><strong>Smart Key:</strong> ❌ Not Available</p>
+              <p><strong>Tire Size:</strong> 12-inch Front & Rear</p>
+              <p><strong>Fuel Tank Capacity:</strong> 4.2 Liters</p>
+              <p><strong>Underseat Storage:</strong> 25L – Fits Full-face Helmet</p>
+            </div>
+
+            <div class="variant-block">
+              <h3>Dimensions</h3>
+              <p><strong>Seat Height:</strong> 750 mm</p>
+              <p><strong>Weight:</strong> 103 kg</p>
+              <p><strong>Ground Clearance:</strong> 135 mm</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div id="fazzio" class="card-modern w-100">
+          <img  src="https://imgcdn.zigwheels.ph/medium/gallery/color/86/3009/yamaha-mio-fazzio-color-581628.jpg" alt="Yamaha Mio Fazzio" class="motor-img">
+          <div  class="card-content">
+            <h2 class="model-title text-center">Yamaha Mio Fazzio</h2>
+
+            <div class="variant-block">
+              <h3>Engine & Performance</h3>
+              <p><strong>Engine Type:</strong> Air-cooled, 4-Stroke, SOHC</p>
+              <p><strong>Displacement:</strong> 125cc</p>
+              <p><strong>Hybrid System:</strong> ✅ Yes (Electric Power Assist)</p>
+              <p><strong>Fuel System:</strong> Fuel Injection (FI)</p>
+              <p><strong>Blue Core:</strong> ✅ Yes</p>
+              <p><strong>Start/Stop System:</strong> ✅ Yes</p>
+              <p><strong>Transmission:</strong> CVT</p>
+            </div>
+
+            <div class="variant-block">
+              <h3>Technology & Features</h3>
+              <p><strong>Full Digital Meter:</strong> ✅ Yes</p>
+              <p><strong>LED Lights:</strong> ✅ Headlamp & Taillight</p>
+              <p><strong>Smart Motor Generator:</strong> ✅ Yes</p>
+              <p><strong>12V Power Socket:</strong> ✅ Yes</p>
+              <p><strong>Y-Connect App:</strong> ✅ Yes (Bluetooth Enabled)</p>
+            </div>
+
+            <div class="variant-block">
+              <h3>Comfort & Dimensions</h3>
+              <p><strong>Seat Height:</strong> 750 mm</p>
+              <p><strong>Weight:</strong> 95 kg</p>
+              <p><strong>Fuel Tank:</strong> 5.1 Liters</p>
+              <p><strong>Tire Size:</strong> 12-inch Front & Rear Tubeless</p>
+              <p><strong>Ground Clearance:</strong> 135 mm</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div id="pg1" class="card-modern w-100">
+          <img  src="https://imgcdn.zigwheels.my/large/gallery/color/73/2477/yamaha-pg-1-color-466892.jpg" alt="Yamaha PG-1" class="motor-img mb-4">
+          <div  class="card-content">
+            <h2 class="model-title text-center">Yamaha PG-1</h2>
+
+            <div class="variant-block">
+              <h3>Engine & Performance</h3>
+              <p><strong>Engine Type:</strong> Air-cooled, 4-Stroke, SOHC</p>
+              <p><strong>Displacement:</strong> 114cc</p>
+              <p><strong>Fuel System:</strong> Fuel Injection (FI)</p>
+              <p><strong>Max Power:</strong> 8.9 hp @ 7,000 rpm</p>
+              <p><strong>Transmission:</strong> 4-speed Manual</p>
+              <p><strong>Clutch:</strong> Wet, Centrifugal, Shoe and Multiple-Disc</p>
+            </div>
+
+            <div class="variant-block">
+              <h3>Design & Features</h3>
+              <p><strong>Type:</strong> Utility/Off-Road Inspired</p>
+              <p><strong>Headlight:</strong> Round LED</p>
+              <p><strong>Digital Panel:</strong> ✅ Yes</p>
+              <p><strong>Under Seat Storage:</strong> ✅ Yes</p>
+              <p><strong>Long Seat:</strong> ✅ Yes</p>
+            </div>
+
+            <div class="variant-block">
+              <h3>Dimensions</h3>
+              <p><strong>Seat Height:</strong> 795 mm</p>
+              <p><strong>Ground Clearance:</strong> 170 mm</p>
+              <p><strong>Fuel Tank:</strong> 4.2 Liters</p>
+              <p><strong>Wheelbase:</strong> 1,255 mm</p>
+              <p><strong>Weight:</strong> 101 kg</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-12">
+        <div id="ytx" class="card-modern w-100">
+          <img  src="https://motortrade.com.ph/wp-content/uploads/2018/09/1-10.jpg" alt="Yamaha YTX 125" class="motor-img">
+          <div  class="card-content">
+            <h2 class ="model-title text-center">Yamaha YTX 125</h2>
+
+            <div class="variant-block">
+              <h3>Engine & Performance</h3>
+              <p><strong>Engine Type:</strong> Air-cooled, 4-Stroke, SOHC</p>
+              <p><strong>Displacement:</strong> 125cc</p>
+              <p><strong>Fuel System:</strong> Carburetor</p>
+              <p><strong>Max Power:</strong> 8.2 hp @ 7,000 rpm</p>
+              <p><strong>Transmission:</strong> 4-speed Manual</p>
+              <p><strong>Clutch:</strong> Wet Multi-Plate</p>
+            </div>
+
+            <div class="variant-block">
+              <h3>Utility Features</h3>
+              <p><strong>Rear Carrier:</strong> ✅ Heavy-duty Rack</p>
+              <p><strong>Kick Starter:</strong> ✅ Yes</p>
+              <p><strong>Electric Starter:</strong> ✅ Yes</p>
+              <p><strong>Engine Kill Switch:</strong> ❌ No</p>
+            </div>
+
+            <div class="variant-block">
+              <h3>Dimensions</h3>
+              <p><strong>Seat Height:</strong> 760 mm</p>
+              <p><strong>Ground Clearance:</strong> 175 mm</p>
+              <p><strong>Fuel Tank:</strong> 7.6 Liters</p>
+              <p><strong>Wheelbase:</strong> 1,240 mm</p>
+              <p><strong>Weight:</strong> 114 kg</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+<footer class="footer-section text-white py-4" style="font-size: 0.5rem; background-color: rgb(19, 19, 145);">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-4 mb-3">
+        <img src="https://motortrade.com.ph/wp-content/uploads/2018/07/mcewnew.png" alt="Logo" class="mb-3" style="max-height: 20px;">
+        <p class="mb-1"><i class="bi bi-geo-alt-fill me-1"></i>Brgy. IV, Bantay, IS</p>
+        <p><i class="bi bi-geo-alt-fill me-1"></i>Brgy. V, Bantay, IS</p>
+
+      </div>
+      <div class="col-4 mb-3">
+        <h6 class="text-white" style="font-size: 0.7rem;">CONTACT INFO</h6>
+        <a href="#" class="social-icon text-white me-2" style="font-size: 0.7rem;"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="social-icon text-white me-2" style="font-size: 0.7rem;"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="social-icon text-white"><i class="bi bi-youtube" style="font-size: 0.7rem;"></i></a>
+        <p>Phone: <span class="highlight">0926 328 2525</span></p>
+      </div>
+      <div class="col-4 mb-3">
+        <h6 class="text-white" style="font-size: 0.7rem;">PARTNERS</h6>
+        <ul class="list-unstyled" style="font-size: 0.5rem;">
+          <li>Bank of Makati</li>
+          <li>Fundline Finance Corporation</li>
+          <li>Northpoint Development Bank</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-3 footer-links">
+      <a href="#" class="text-white me-2">About Us</a> |
+      <a href="#" class="text-white mx-2">FAQs</a> |
+      <a href="#" class="text-white mx-2">Careers</a> |
+      <a href="#" class="text-white ms-2">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!-- Apply for a Loan Tab -->
+  <div class="loan-tab">Inquire now</div>
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
